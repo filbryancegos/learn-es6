@@ -1,17 +1,46 @@
 import _ from 'lodash';
 import * as callback from './js/helpers/callback';
 import { getPostsone, createPostone } from './js/helpers/promises';
-import { fetchUsers } from './js/helpers/fetch';
+//import { fetchUsers } from './js/helpers/fetch';
 import { constName } from './js/helpers/const';
 import { letModulus } from './js/helpers/let';
-import * as arrow from './js/helpers/arrow';
+//import * as arrow from './js/helpers/arrow';
 import { fucntionParameters } from './js/helpers/functionparameters';
 import { destructuring } from './js/helpers/destructuring';
 import { shorthand } from './js/helpers/shorthand';
 import { spread } from './js/helpers/spread';
-import * as rock from './js/helpers/rock';
+//import * as rock from './js/helpers/rock';
+import { fetchapi } from './js/helpers/fetchapi';
+
 import './style.css';
 import './sass/main.scss';
+
+import * as apps from './js/apps';
+
+const sum = apps.sum(12,12);
+
+const string = 'the quick brown fox jump over the lazy dog';
+
+console.log(apps.trim(string));
+console.log(sum);
+
+const a = ['bryan','egos','eking']
+const b = ['eking','brutos','amang'];
+const all = [...a,...b];
+console.log(all);
+
+const [fname,lname] = ['bryan','egos'];
+console.log(fname);
+
+const amang = {
+  ek: 'bryans',
+  brt: 'egoss'
+}
+
+const {ek,brt} = amang;
+//console.log(ek);
+//console.log(brt);
+
 
 //callback
 const newpost = {
@@ -25,28 +54,28 @@ createPostone({title: 'post five', content: 'the quick brown fox jump over the l
     .catch(err => console.log(err))
 
 //fetch
-fetchUsers();
+//fetchUsers();
 
 // constant
-constName();
+//constName();
 
 // let 
-letModulus();
+//letModulus();
 
 // arrow function
-arrow.localStoragearrow();
+//arrow.localStoragearrow();
 
 //function Parameters
-fucntionParameters();
+//fucntionParameters();
 
 //shorthand object properties
-shorthand();
+//shorthand();
 
 //Object destructuring
-destructuring();
+//destructuring();
 
 //spread operator
-spread();
+//spread();
 
 
 

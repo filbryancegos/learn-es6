@@ -9,7 +9,6 @@ const scoreboard = {
 };
 
 
-
 // Play game
 export const play = (e) => {
   restart.style.display = 'inline-block';
@@ -118,12 +117,8 @@ export const clearModal = (e) =>  {
 }
 
 
-
-
-
 // Event listeners
 choices.forEach(choice => choice.addEventListener('click', play));
-
 
 addEventListener('click', clearModal);
 addEventListener('click', restartGame);
